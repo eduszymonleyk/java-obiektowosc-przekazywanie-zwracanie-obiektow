@@ -16,6 +16,16 @@ public class CompanyRepo {
         }
     }
 
+    Company findCompany(long nip){
+        Company findedCompany = null;
+        for (int i = 0; i < companies.length && companies[i] != null; i++) {
+            if(companies[i].nip == nip) {
+                findedCompany = companies[i];
+            }
+        }
+        return findedCompany;
+    }
+
     void displayAll(){
         System.out.println("*********** wszystkie firmy ***********");
         for (int i = 0; i < companies.length && companies[i] != null; i++) {

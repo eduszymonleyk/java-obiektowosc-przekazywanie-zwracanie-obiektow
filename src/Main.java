@@ -27,5 +27,21 @@ public class Main {
 
         // wyświetlenie wszystkich firm
         companyRepo.displayAll();
+
+        System.out.println("-------- poszukiwanie firmy o nip = 1113338882 ----------");
+        Company company = companyRepo.findCompany(1113338882);
+        if(company != null) {
+            company.display();
+        } else {
+            System.out.println("Not find.");
+        }
+
+        System.out.println("-------- poszukiwanie firmy o nip = 1241224114 ----------");
+        company = companyRepo.findCompany(1241224114);
+        if(company != null) {
+            company.display();
+        } else {
+            System.out.println("Not find.");
+        }
     }
 }
