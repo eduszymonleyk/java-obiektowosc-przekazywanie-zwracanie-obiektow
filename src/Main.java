@@ -33,7 +33,7 @@ public class Main {
         if(company != null) {
             company.display();
         } else {
-            System.out.println("Not find.");
+            System.out.println("Not found.");
         }
 
         System.out.println("-------- poszukiwanie firmy o nip = 1241224114 ----------");
@@ -41,7 +41,7 @@ public class Main {
         if(company != null) {
             company.display();
         } else {
-            System.out.println("Not find.");
+            System.out.println("Not found.");
         }
     }
 }
